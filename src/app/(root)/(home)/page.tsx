@@ -9,8 +9,8 @@ import { api } from "../../../../convex/_generated/api";
 import { useRouter } from "next/navigation";
 import MeetingModal from "@/components/MeetingModal";
 import LoaderUI from "@/components/LoaderUI";
-// import { Loader2Icon } from "lucide-react";
-// import MeetingCard from "@/components/MeetingCard";
+import { Loader2Icon } from "lucide-react";
+import MeetingCard from "@/components/MeetingCard";
 
 export default function Home() {
   const router = useRouter();
@@ -72,7 +72,7 @@ export default function Home() {
         </>
       ) : (
         <>
-          {/* <div>
+          <div>
             <h1 className="text-3xl font-bold">Your Interviews</h1>
             <p className="text-muted-foreground mt-1">View and join your scheduled interviews</p>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
                 You have no scheduled interviews at the moment
               </div>
             )}
-          </div> */}
+          </div>
         </>
       )}
     </div>
